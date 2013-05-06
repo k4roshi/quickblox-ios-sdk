@@ -9,9 +9,9 @@ Pod::Spec.new do |s|
   s.prefix_header_contents = '#import <Quickblox/Quickblox.h>'
     
   s.frameworks     = 'CFNetwork', 'SystemConfiguration', 'MobileCoreServices', 'CoreGraphics', 'CoreLocation', 'CoreData', 'AudioToolbox', 'CoreMedia', 'Accelerate', 'CoreVideo', 'AVFoundation', 'Quickblox'
-  s.libraries      = 'resolv', 'z'
+  s.libraries      = 'resolv', 'z', 'stdc++'
   s.ios.dependency   'KissXML'
-  s.compiler_flags = '-ObjC-lstdc++'
+  s.compiler_flags = '-ObjC'
   s.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/quickblox-ios-sdk/Framework"' }
 
 end
