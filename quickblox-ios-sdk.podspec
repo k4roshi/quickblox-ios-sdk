@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name           = 'quickblox-ios-sdk'
   s.homepage       = 'https://github.com/k4roshi/quickblox-ios-sdk'
-  s.version        = '3.5.2'
+  s.version        = '0.0.1'
   s.source         = { :git => 'https://github.com/k4roshi/quickblox-ios-sdk.git' }
   s.preserve_paths = 'Framework/Quickblox.framework'
   s.requires_arc   = true
